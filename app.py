@@ -6,12 +6,15 @@ friends_dict = [
     {"name": "Test", "flavor": "swirl", "read": "yes", "activities": "reading"}
 ]
 
-
 @app.route("/", methods=["GET", "POST"])
 def index():
     return render_template(
         "index.html", pageTitle="Web form template", friends=friends_dict
     )
+
+@app.route("/", methods=["GET", "POST"])
+def homepage():
+    return redirect(url_for("index"))
 
 
 @app.route("/add", methods=["POST"])
@@ -48,6 +51,12 @@ def add():
         return redirect(url_for("index"))
     else:
         return redirect(url_for("index"))
+
+@app.route('/about')
+def about():
+    return render_template(
+        "about.html", pageTitle="Web form template", friends=friends_dict
+    )
 
 
 if __name__ == "__main__":
