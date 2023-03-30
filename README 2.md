@@ -40,8 +40,8 @@ Basic structure for starting a Flask web form project with Jinja templates
 ### TO-DO
 Features to be added. 
 
-- [ ] ~~Catch all selected activities in /add and put them into the python dictionary
-- [ ] ~~About Page
+- [x] Catch all selected activities in /add and put them into the python dictionary
+- [x] About Page
 - [ ] Styling using Bootstrap 5 framework
 - [ ] Custom error messages
 - [ ] Flash messages
