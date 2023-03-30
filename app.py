@@ -1,6 +1,8 @@
-from flask import Flask, request, render_template, redirect, url_for
+from flask import Flask, request, render_template, redirect, url_for, flash
 
 app = Flask(__name__)
+
+app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
 all_books_dict = [
 
@@ -80,6 +82,7 @@ def add():
             book_dict
         )  # append this dictionary entry to the larger friends dictionary
         print(all_books_dict)
+        flash('Record successfully added.')
         return redirect(url_for("index"))
     else:
         return redirect(url_for("index"))

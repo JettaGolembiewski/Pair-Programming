@@ -16,6 +16,11 @@
 
   <body>
     <nav><a href = "/">Home</a> | <a href="about"> About</a></nav>
+    <div>
+      {% for message in get_flashed_messages() %}
+        {{ message }}
+      {% endfor %}
+    </div>
     <div class="container">{% block body %}xx {% endblock %}</div>
   </body>
 </html>
