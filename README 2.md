@@ -38,9 +38,11 @@ Basic structure for starting a Flask web form project with Jinja templates
 12. Continue working with the project as you normally would.
 
 ### TO-DO
+Features to be added. 
 
 - [x] Catch all selected activities in /add and put them into the python dictionary
-- [ ] Create a confirmation page before submitting
-- [ ] Submit records to database
-- [ ] Delete a record
-- [ ] Update a record
+- [ ] About Page
+- [ ] Styling using Bootstrap 5 framework
+- [ ] Custom error messages
+- [ ] Flash messages
+- [ ] API
