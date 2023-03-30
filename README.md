@@ -5,6 +5,8 @@
 **Description:** We practiced Pair Programming by creating a dynamic website using a Python web framework named Flask. We have alternated working on this assignment, while checking eachothers work and collaberating at each step. We have also built on our Git and GitHub skills by creating a .gitignore file, adding collaborators, and learning to write README files using Markdown
 
 
+![Library activation homepage](library.jpg "Library homepage")
+
 **Instructions for Running Application:** 
 
 1. Clone this repository to local computer
