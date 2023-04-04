@@ -98,7 +98,8 @@
             <option value="loan">A friend loaned it to me.</option>
           </select>
         </label>
-        <p><input type="submit" id="submit" value="Add Book" /></p>
+        <p><input class="btn btn-info" type="submit" value="Add Book"></p>
+
       </p>
       
 
@@ -107,11 +108,13 @@
     <br /><br />
     {% if books %}
 
+  
+  
   <h2>List of books</h2>
 
   <hr />
 
-  <table border="1">
+  <table class="table table-striped" border="1">
 
     <thead>
 
