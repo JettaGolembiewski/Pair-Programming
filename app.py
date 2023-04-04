@@ -82,7 +82,7 @@ def add():
             book_dict
         )  # append this dictionary entry to the larger friends dictionary
         print(all_books_dict)
-        flash('Record successfully added.')
+        flash('Record successfully added.', 'success')
         return redirect(url_for("index"))
     else:
         return redirect(url_for("index"))
